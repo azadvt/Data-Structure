@@ -12,7 +12,7 @@ class Trie {
   insert(word) {
     let current = this.root;
     // iterate through all the characters of word
-    for (let character of word) {   
+    for (let character of word) {
       // if node doesn't have the current character as child, insert it
       if (current.children[character] === undefined) {
         current.children[character] = new Node(character);
